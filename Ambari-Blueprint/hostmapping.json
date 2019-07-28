@@ -1,0 +1,26 @@
+{
+	"blueprint": "multinodehdp",
+	"default_password" : "password",
+	"config_recommendation_strategy": "NEVER_APPLY",
+	"provision_action": "INSTALL_AND_START",
+	"configurations": [],
+	"host_groups": [{
+		"name": "host_group_0",
+		"hosts": [{
+			"fqdn": "Namenode"
+		}]
+	}, {
+		"name": "host_group_1",
+		"hosts": [{
+			"fqdn": "Datanode1"
+		}]
+	}, {
+		"name": "host_group_2",
+		"hosts": [{
+			"fqdn": "Datanode2"
+		}]
+	}],
+	"Clusters": {
+		"cluster_name": "multinodehdp"
+	}
+}
